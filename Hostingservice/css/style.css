@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif; }
+
+.navbar {
+  display: flex;
+  flex-flow: row wrap;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  min-height: 60px;
+  line-height: 60px;
+  background-color: #2A475B; }
+  .navbar__logo {
+    flex: 3 auto;
+    font-size: 30px;
+    padding-left: 25px; }
+    @media screen and (max-width: 800px) {
+      .navbar__logo {
+        padding: 0;
+        flex: 1 100%;
+        text-align: center; } }
+    .navbar__logo--text {
+      font-family: 'Yellowtail', cursive;
+      color: #EAEAEA;
+      text-transform: uppercase;
+      text-decoration: underline;
+      text-decoration-color: #EAEAEA; }
+  .navbar__info {
+    flex: 2 auto;
+    display: flex;
+    justify-content: space-around; }
+    @media screen and (max-width: 860px) {
+      .navbar__info {
+        flex: 1 40%;
+        justify-content: flex-start;
+        padding-left: 40px; } }
+    @media screen and (max-width: 680px) {
+      .navbar__info {
+        display: none; } }
+    .navbar__info--text {
+      color: #EAEAEA;
+      margin-right: 20px;
+      text-align: center; }
+      .navbar__info--text:hover {
+        text-decoration: underline;
+        transition: text-decoration 1s; }
+  .navbar__links {
+    flex: 1 auto;
+    display: flex;
+    justify-content: flex-end; }
+    .navbar__links--link {
+      flex: 1;
+      text-align: center;
+      width: 80px;
+      color: #EAEAEA;
+      text-decoration: none; }
+      .navbar__links--link:hover {
+        color: #2A475B;
+        background-color: #7096A0;
+        transition: all .3s; }
+
+.header {
+  background-image: linear-gradient(to right bottom, rgba(112, 150, 160, 0.8), rgba(42, 71, 91, 0.8)), url(/img/hero.jpg);
+  position: relative;
+  height: 100vh;
+  background-size: cover;
+  background-position: center; }
+  .header__container--heading {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    border: 1px rgba(42, 71, 91, 0.28);
+    border-radius: 20px;
+    padding: 15px;
+    background-color: rgba(42, 71, 91, 0.28); }
+    .header__container--heading h1 {
+      font-size: 80px;
+      color: #EAEAEA;
+      font-family: 'Yellowtail', cursive;
+      text-decoration: underline;
+      text-transform: uppercase;
+      text-align: center;
+      text-underline-position: under; }
+    .header__container--heading p {
+      font-size: 40px;
+      color: #EAEAEA;
+      text-align: center; }
